@@ -7,13 +7,20 @@
   <title>Document</title>
 </head>
 <body>
-  <noscript>
+  <!-- <noscript>
     <p>У вас отключен JS</p>
-  </noscript>
-  <p id="p">hello</p>
+  </noscript> -->
+  <p id="p1">Paragraf with id = p1</p>
+  <p id="p2">Paragraf with id = p2</p>
+  <p id="p3">Paragraf with id = p3</p>
+  <p id="p4">Paragraf with id = p4</p>
 
-  <script>
-    
+  <!-- два значения скрипта, можно их оба одновременно использовать -->
+  <!-- <script src="dist/script.js"></script> - это "первый" скрипт, который я пока отключил -->
+
+    <script>
+      p1.innerHTML="New text"
+      p2.innerHTML="New text2"
     // undefined
     // Null
     // Boolean
@@ -77,10 +84,14 @@
     console.log(parseFloat(x))
 
 
+    
     console.log('1+true =', 1+true, ', typeof(1+true) =', typeof(1+true))
     console.log('"1" + 2 =', "1" + 2, ', typeof("1" + 2) =', typeof("1" + 2))
     console.log('"1" + false', "1" + false, ', typeof("1" + false) =', typeof("1" + false))
+    
 
+
+    
     /* 
       Задание для самостоятельной работы. Определите, 
       какие логические операции будут необходимы для составления условий в следующих задачах: 
