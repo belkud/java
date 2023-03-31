@@ -5,27 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <style>
-    *{
-      font-size: 45px;
-    }
-  </style>
 </head>
 <body>
   <noscript>
     <p>У вас отключен JS</p>
   </noscript>
-  <p id="p1">Paragraf with id = p1</p>
-  <p id="p2">Paragraf with id = p2</p>
-  <p id="p3">Paragraf with id = p3</p>
-  <p id="p4">Paragraf with id = p4</p>
+  <p id="p">hello</p>
 
-  <!-- два значения скрипта, можно их оба одновременно использовать -->
-  <!-- <script src="dist/script.js"></script> - это "первый" скрипт, который я пока отключил -->
-
-    <script>
-      p1.innerHTML="New text"
-      p2.innerHTML="New text2"
+  <script>
+    
     // undefined
     // Null
     // Boolean
@@ -89,14 +77,10 @@
     console.log(parseFloat(x))
 
 
-    
     console.log('1+true =', 1+true, ', typeof(1+true) =', typeof(1+true))
     console.log('"1" + 2 =', "1" + 2, ', typeof("1" + 2) =', typeof("1" + 2))
     console.log('"1" + false', "1" + false, ', typeof("1" + false) =', typeof("1" + false))
-    
 
-
-    
     /* 
       Задание для самостоятельной работы. Определите, 
       какие логические операции будут необходимы для составления условий в следующих задачах: 
@@ -119,10 +103,114 @@
     // ИЛИ    ||
     // НЕ     !
 
+    console.log('Boolean(0)', Boolean(0))
+    console.log('Boolean(1)', Boolean(1)) // любое число не равное 0 будет истиной
+    console.log('Boolean(0.1)', Boolean(0.1)) // любое число не равное 0 будет истиной
+    console.log('Boolean("")', Boolean(''))
+    console.log('Boolean("sd")', Boolean('sd')) // любая не пустая строка будет истиной
+    console.log('Boolean(undefined)', Boolean(undefined))
+    console.log('Boolean(null)', Boolean(null))
+    console.log('Boolean(Symbol("a"))', Boolean(Symbol('a')))
+    console.log('Boolean({})', Boolean({}))
+    console.log('Boolean([])', Boolean([]))
+
+    // alert('fsdfsdsdf')
+    // result = confirm('Are u shure?')
+    // console.log('confirm result',result)
+
+    // if (условие) {
+    //  код, который выполнится, если условие истинно (true)
+    // }
+
+    // if (условие) {
+    //  код, который выполнится, если условие истинно (true)
+    // } else {
+    //  код, который выполнится, если условие ложно (false)
+    // }
+
+    // result = условие ? значение при истинности условия : значение при ложности условия
+    
+    // if (условие) {
+    //  код, который выполнится, если условие истинно (true)
+    // } else if (ещё одно условие) {
+    //  код, который выполнится, если второе условие истинно (true)
+    // } else {
+    //  код, который выполнится, если условие ложно (false)
+    // }
+        
+        
+
+
+    // result = prompt('Input number (not 0)')
+    // if (parseInt(result)) {
+    //   alert('Thanks. Your number ^2 is ' + parseInt(result)**2 )
+    // } else {
+    //   alert('It is not number')
+    // }
+    // console.log('prompt result',result)
+    
+    x = 99
+    parity = ''
+    if (x % 2 == 0) {
+      parity = 'even'
+    } else {
+      parity = 'odd'
+    }
+    console.log('after if', parity)
+    // Тернарный оператор. Его код равносилен коду выше
+    parity = (x % 2 == 0) ? 'even' : 'odd'
+    console.log('after tern', parity)
+    parity = (x % 2 == 0) ? x*10 : x/10
+    console.log('after tern with calc', parity)
+
+    protocol = "ASP"
+    if(protocol == "HTTP") description = "Hypertext transfer protocol"
+    else if(protocol == "HTTPS") description = "Secure hypertext transfer protocol"
+    else if(protocol == "FTP") description = "File transfer protocol"
+    else description = "Unsupported protocol"
+
+    // switch(переменная){
+    //   case первый_вариант_значение_переменной:
+    //     description = "Hypertext transfer protocol"
+    //     break  // Оператор выхода из конструкции switch
+    //   case второй_вариант_значение_переменной:
+    //     description = "Secure hypertext transfer protocol"
+    //     break
+    //   default: // случай, если переменная не равна ни одному из вариантов выше
+    //     description = "Unsupported protocol";
+    // }
+
+    protocol = "HTTPS"
+    switch(protocol){
+      case "HTTP":
+        description = "Hypertext transfer protocol";
+        break;
+      case "HTTPS":
+        description = "Secure hypertext transfer protocol";
+        break;
+      case "FTP":
+        description = "File transfer protocol";
+        break;
+      default :
+        description = "Unsupported protocol";
+    }
+    console.log(protocol, description)
+
+
+    // month = parseInt(prompt('Введите количество месяцев'))
+    // // month = prompt('Введите количество месяцев')
+
+    // i = 0
+    // while (i<month) {
+    //   // console.log(`платеж за ${i+1} месяц`, '1000 р')
+    //   console.log('платеж за ' + i + ' месяц', '1000 р')
+    //   i = i + 1
+    // }
+
     // комментарий
     /* многострочный 
     комментарий*/
   </script>
-  <!-- <script src="dist/script.js"></script> -->
+  <script src="dist/script.js"></script>
 </body>
 </html>
