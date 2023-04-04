@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      font-size: 25px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <p id="a">Hello</p>
+
+  <script>
+    a.innerHTML = 'My_little_work'
+    console.log('5 + 9 =', 5 + 9)
+
+// x = 5
+// y = 7
+// z = 5
+
+// console.log('x = 5')
+// console.log('y = 7')
+// console.log('y > x', y > x)
+// console.log('x >= z', x >= z)
+// console.log('++x', ++x)
+// console.log('--x', --x)
+// console.log('x == z', x == z)
+// console.log('x == y', x == y)
+
+// console.log('script \n script \n cool programm')
+// console.log('10 % 3 =', 10 % 3)
+// console.log('5 * 10 ** 3 =',5 * 10 ** 3)
+
+
+// let result5 = prompt ('введите число')
+// if (result5 >= 0){ 
+//   alert ('верно')
+// }  else {
+//   alert ('неверно')}
+
+
+
+
+// КАК ОКРУГЛИТЬ К ЧЕТНОМУ ЧИСЛУ..... 
+
+// if( Math.round(x) % 2 == 0 )
+//  x = Math.round(x)
+// else {
+//  if( x < Math.round(x) )
+//  bx = Math.round(x) - 1
+//  else
+//  bx = Math.round(x) + 1
+// }
+// console.log ( x = Math.round (7.7) )
+// console.log ((8 % 2) == 0 )
+
+
+// let parity = (x % 2 == 0) ? 'even' : 'odd'
+// console.log ( x % 2 == 0)
+
+
+// Решение 1
+// let result = prompt ('Пароль')
+// if (result == 123 || result == 321)
+// {
+  //   alert ('Подтвеждено')
+  // } else {
+    //   alert ('Неверно')
+    // 
+
+    // Решение 2
+        // Тернарный оператор
+        // result = prompt ('Пароль')
+        // alert((result == '333' || result == '321') ? 'Подтверждено' : 'Отменено')
+
+      // switch(protocol) {
+      // case "HTTP":
+      //     description = "Hypertext transfer protocol";
+      //     break;
+      // case "HTTPS":
+      //     description = "Secure hypertext transfer protocol";
+      //     break;
+      // case "FTP":
+      //     description = "File transfer protocol";
+      //     break;
+      // default :
+      // description = "Unsupported protocol";
+      // }
+
+
+//  x = +prompt("x=");
+//  var str = "";
+//  switch(x){
+//  case 1: str += "1";
+//  case 2: str += "2";
+//  case 3: str += "3";
+//  case 4: str += "4";
+//  default: str += "5";
+//  }
+//  alert(str);
+
+
+// Задание 1
+
+// Запросить у пользователя подтверждение действия (используя диалог confirm) и после ответа вывести сообщение « Подтверждено » или « Отменено ».
+// let result = confirm('Подтвердить')
+// if (result == '1') {
+// alert ('Подтверждено')
+// } else {
+//   (result == '2') 
+// alert ('Отменено')
+// }
+
+            // let x = confirm('Вы являетесь пользователем сайта');
+            // if(x == true) alert('Подтверждено')
+            //     else alert('Отменено')
+
+
+// Задание 2
+
+// Написать скрипт, который запрашивает пароль подтверждения некоторого действия. Допускается три возможных пароля («Step», «Web» и «JavaScript»). После ввода пароля скрипт должен вывести сообщение « Подтверждено » или « Отменено ».
+// let result = prompt ('Пароль')
+// alert ((result == 'Step' || result == 'Web' || result == 'JavaScript') ? 'Подтверждено': 'Отменено')
+
+
+// задание 3
+
+// Запроситть у пользователя число « х », проверить его на принадлежность диапазону 0..100 и вывести соответствующее сообщение.
+// let result = prompt ('введите число')
+// if (result >= 0 && result < 100) {
+// alert ('true')
+// } else {
+//   alert ('false')
+// } 
+
+
+// Задание 4
+
+// Запросить два числа « х » и « у », сравнить их величины и вывести одно из сообщений: « x > y », « x < y » или « x = y » в зависимости от введенных данных.
+// let x = prompt ('Введите первое число')
+// let y = prompt ('Введите второе число')
+// if (x < y)
+//     alert ('первое число меньше второго')
+// if (x == y)
+//     alert ('первое число равно второму')
+// if (x > y)
+//     alert ('первое число больше второго')
+
+
+// Задание 5 
+
+// Запросить число « х », « ранжировать » его по диапазонам 0..100, 101..200, 201..300 и вывести сообщение о принадлежности или несоответствии ни одному из них.
+// let x = prompt ('Введите число')
+// if (x >= 0 && x < 100)
+//   alert ('диапазон от 0 до 100')
+// if (x >= 100 && x < 200)
+//   alert ('диапазон от 100 до 200')
+// if (x >= 200 && x < 300)
+//   alert ('диапазон от 200 до 300')
+// else
+//   alert ('Несоответствует')
+
+
+  // Задание 6:
+
+  // Запросить цифру и вывести ее название: 0 - «ноль», 1 - «единица», 2 - «двойка» и т.д.Если переменная не является цифрой, выводится сообщение «не цифра».
+    // let x = prompt("Введите число");
+    // x = parseInt(x);
+    // if (x == 0) alert("ноль");
+    // if (x == 1) alert("единица");
+    // if (x == 2) alert("двойка");
+    // if (x == 3) alert("тройка");
+    // if (x == 4) alert("четверка");
+    // if (x == 5) alert("пятерка");
+    // if (x == 6) alert("шестерка");
+    // if (x == 7) alert("семерка");
+    // if (x == 8) alert("восьмерка");
+    // if (x == 9) alert("девятка");
+    // if (x != 0 & x != 1 & x != 2 & x != 3 & x != 4 & x != 5 & x != 6 & x != 7 & x != 8 & x != 9) alert("не цифра");
+
+// Задание 7
+// Запросить у пользователя его имя и вывести ответ.
+// let x = prompt('Ваше имя')
+// alert ('Это ваше имя - ' + x)
+
+// Задание 8
+
+// Запросить у пользователя год его рождения, посчитать, сколько ему лет и вывести результат.
+// const year = 2023;
+//   let x = prompt('Введите год вашего рождения');
+//   let y = year - x;
+//   alert('Ваш возраст равен - ' + y + ' годам');
+
+                  // const diesel = 52
+                  // let x = prompt ('Введите число')
+                  // let y = (diesel - x)
+                  // alert ('литров осталось:' + y + ' литров')
+
+
+
+  // Задание 9:
+
+  // Запросить у пользователя длину стороны квадрата и вы вести периметр такого квадрата.
+  // let x = prompt ('Длина стороны квадрата')
+  // let y = (4 * x)
+  // alert ('Периметр квадрата = ' + y)
+
+
+// Задание 10
+// Запросить у пользователя радиус окружности и вывести площадь такой окружности.
+// let x = prompt ('Введите радиус окружности')
+// S = (3.14 * x * x)
+// alert ('радиус окружности = ' + S)
+
+// Задание 11
+// Запросить у пользователя расстояние в км. между двумя городами и за сколько часов он хочет добраться. Посчитать скорость, с которой необходимо двигаться, чтобы успеть вовремя.
+
+// let x = prompt ('Расстояние между городами')
+// let y = prompt ('Ваше планируемое время в пути')
+// let z = (x / y)
+// alert ('Ориентировочная скорость в дороге = ' + z + ' км')
+
+
+            // let x = prompt('Введите растояние в км. между городами');
+            // let y = prompt('Введите время за которое хотите добраться');
+            // let z  = x / y;
+            // alert('Скорость вашего движения должна быть равна - ' + Math.trunc(z) + ' км/час');
+
+
+  // Задание 12
+  // Конвертер валют: 1 $ = 0.9087 €
+// let x = prompt ('Количество долларов')
+// let y = 0.9087
+// z = x * y
+// alert ('Евро на эту сумму = ' + z)
+
+
+                    // function zadanie12() {
+                    //             const kurs = 0.9087;
+                    //             let x = document.getElementById('txt1').value;
+                    //             y = x * kurs;
+                    //             document.getElementById('txt2').value = y.toFixed(2);
+                    //         }
+
+
+
+
+      // Задание 16:
+    // Ввести целое число и вывести в ответ, четное число или нет.
+    // let x = prompt ('Введите число')
+    // if (x % 2 == 1)
+// alert ('число нечетное')
+// if (x % 2 == 0)
+// alert ('число четное')
+
+// тернарное выражение
+// let x = prompt ('Введите число')
+// alert ((x % 2 == 0) ? 'Четное' : 'Нечетное')
+
+// Задание 14:
+
+// Ввести сумму денег в кошельке и цену одного товара. 
+// Программа выводит сколько товара может купить пользователь
+//  и сколько сдачи у него останется.
+
+
+// let x = prompt ('Введите сумму денег в кошельке')
+// let y = prompt ('Введите стоимость товара')
+// let z = parseInt ( x / y)
+// alert ('Количество купленного товара = ' + z)
+// let balance = ( x - y * z)
+// alert ('Остаток денежных средств = ' + balance)
+
+
+
+
+
+
+
+
+
+// let x = prompt ('Средний расход топлива')
+// let y = prompt ('Количество литров в бензобаке')
+// let z = y / x * 100
+// alert ('автомобиль ориентировочно проедет = ' + z + ' км')
+
+
+// switch(protocol) 
+// {
+//  case "HTTP":
+//  description = "Hypertext transfer protocol";
+//  break;
+//  case "HTTPS":
+//  description = "Secure hypertext transfer protocol";
+//  break;
+//  case "FTP":
+//  description = "File transfer protocol";
+//  break;
+//  default :
+//  description = "Unsupported protocol";
+// }
+
+
+// Оператор switch
+// x = +prompt("Input x=");
+//  var str = "";
+//  switch(x){
+//  case 1: str += "1";
+//  case 2: str += "2";
+//  case 3: str += "3";
+//  case 4: str += "4";
+//  default: str += "5";
+//  }
+//  alert(str);
+
+// ЦИКЛЫ
+
+i = 1
+while (i < 10) {
+  console.log (i)
+  // let x = (i % 2 == 0)
+  i++
+}
+
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>
