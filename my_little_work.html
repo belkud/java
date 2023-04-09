@@ -256,12 +256,12 @@
     // Ввести целое число и вывести в ответ, четное число или нет.
     // let x = prompt ('Введите число')
     // if (x % 2 == 1)
-// alert ('число нечетное')
-// if (x % 2 == 0)
-// alert ('число четное')
-
-// тернарное выражение
-// let x = prompt ('Введите число')
+    // alert ('число нечетное')
+    // if (x % 2 == 0)
+    // alert ('число четное')
+    
+    // тернарное выражение
+    // let x = prompt ('Введите число')
 // alert ((x % 2 == 0) ? 'Четное' : 'Нечетное')
 
 // Задание 14:
@@ -292,21 +292,6 @@
 // alert ('автомобиль ориентировочно проедет = ' + z + ' км')
 
 
-// switch(protocol) 
-// {
-//  case "HTTP":
-//  description = "Hypertext transfer protocol";
-//  break;
-//  case "HTTPS":
-//  description = "Secure hypertext transfer protocol";
-//  break;
-//  case "FTP":
-//  description = "File transfer protocol";
-//  break;
-//  default :
-//  description = "Unsupported protocol";
-// }
-
 
 // Оператор switch
 // x = +prompt("Input x=");
@@ -322,19 +307,281 @@
 
 // ЦИКЛЫ
 
-// i = 1
-// while (i <= 3) {
+// ЦИКЛ С ПРЕДУСЛОВИЕМ WHILE
+
+// i = 0
+// while (i <= 5) {
 //   console.log (i)
 //   i++
 // }
 
 
-z = 1 
-while (z < 10)
-{
-  console.log (z + ' месяц ' + z)
-  z++ 
-}
+// var deposit = +prompt ('Ваш вклад')
+// var years = 0
+// while (deposit < 100000){
+//   years++
+//   deposit += deposit * 0.1
+// }
+// alert ('У вас появилась тысяча долларов через ' + years + ' лет')
+
+
+
+
+// ЦИКЛ С ПОСТУСЛОВИЕМ DO WHILE
+
+// var x;
+//  do
+//  x = prompt("Write: yes or no")
+//  while(x!="yes" && x!="no")
+
+
+
+
+
+  // ЦИКЛ СЧЕТЧИК С ПРЕДУСЛОВИЕМ FOR
+
+for( i=0; i<=5; i++)  
+ console.log(i);
+
+// for (i=0, j=10; i!=j; i++, j--)
+//  console.log(i, j);
+
+
+
+
+
+
+// fund = +prompt("Credit sum");
+// creditBody = fund + 0.2*fund; 
+// monthlyPayment = creditBody / 12;
+// for(i=1; i<=12; i++)
+//  console.log("month " + i + 
+//  " payment "+monthlyPayment);
+
+
+
+
+
+
+
+
+
+
+
+// var x = + prompt ('Ваш кредит')
+// var y = x +  x * 0.2    // за год
+// var z = y / 12     // за месяц
+// alert ('Ежемесячный платеж '+ z + 'рублей')
+// for (i=1; i<=10; i++)
+// console.log('Месяц ' + i + ' Ежемесячный платеж ' + z)
+
+
+
+// var1 = 7
+// var2 = 5
+
+// if (var1 > var2)
+//   { console.log ('OK')
+//   document.write ('OK')
+//   alert ('OK')
+// }
+// else {
+//   document.write ('NO')
+//   console.log ('NO')
+//   alert ('NO')
+// }
+
+
+
+
+// SWITCH используется вместо if (аналог), 
+// switch лучше тогда, когда множесто значений.
+
+
+//for better understanding switch
+// var z = 4
+// switch (z + 1) {
+//   case 3:
+//     alert("Not enough!") 
+//     break  
+//   case 4:
+//     alert("Exactly!")
+//     break
+//   case 5:
+//     alert("Too many!")
+//     break
+//   default:
+//     alert("I don't know")
+// }
+
+
+// VAR ======== SWITCH`
+
+
+
+
+// var month = 3
+// switch (5) {
+//   case 1 :
+//     alert ('jan')
+//     break
+//     case 2:
+//       alert ('feb')
+//       break
+//       case 3:
+//         alert ('mar')
+//         break
+//         default:
+//           alert ('no find')
+//         }
+        
+//         console.log(typeof(month))
+
+// var x = 3
+
+// var number = +prompt('Введите число между 0 и 3')
+// switch (number) {
+//   case 1: 
+//     alert (' один') 
+//     // console.log ('ОДИН')
+//     // document.write ('1111')
+//     break 
+//   case 2:
+//     alert (' two')
+//     break 
+//   case 3:
+//     alert (' three')
+//     break
+//   default:
+//   alert ('check sentence') 
+
+// }
+
+
+// var a = prompt ('Введите число ')
+//   if (a== 10) {
+//   alert ('верно')
+// }else{ ( a != 10)
+//   alert ('неверно')
+//   }
+
+
+
+
+
+
+// for ( z=0; z<=5; z++)
+// {
+// document.write (z + '<br/>')
+// }
+
+
+// for ( z=1; z<=5; z++)
+// {
+  // document.write (z + '<br/>')
+  
+  
+  // ОБРАЗЕЦ!!!!!!!!!!!
+  // let z = prompt('Введите число') 
+  //   if (z==1) 
+  //   alert ('один')
+  //   else if (z==2)
+  //   alert ('два')
+  //   else if (z==3)
+  //   alert ('три')
+  //   else 
+  //   alert ('undefined')
+  
+  
+
+  
+  
+  // for (x=0
+  // ; x<=10; x+=2)
+  // console.log (x + 'wdw')
+
+  // var z = 1;
+  // var q =20
+  //   do {
+  //     document.write (z++ + ' mounth' + q-- + ' $' + '<br/>')
+  //   }
+  //   while (z <=10, q >= 1)
+
+
+  // for (let x=0,y=4; x!=y; x++, y--) {
+    //  console.log(`x=${x}, y=${y}, x+y=${x+y}`)
+//  console.log('x='+x+' y='+y)
+
+
+
+
+
+// for (z=1, c=10; z<=14, c>=1; z++, c--)
+// console.log ('z = ' + z + '  c = ' + c)
+
+
+// for (i=0;i <=5;i++){
+//   if (i==3){pause}
+//   console.log (i+"<br />");}
+  
+  
+  
+  // for (f=100; f<=110; f++)
+  // { 
+  // if (f==105) {continue}
+  // document.write(f+"<br />")
+  // console.log(f) }
+
+
+// for (v=0; v<=12; v++) 
+//   {
+//   if (v==5) {pause}
+// document.write ( v + '<br/>')
+// console.log (v + ' x null') }
+
+// x = + prompt ('Введите сумму кредита')
+// creditYear = x + 0.2*x 
+// creditMonth = creditYear / 12 // за месяц
+// for (s=1; s<=12; s++)
+// console.log ('Month ' + s + ' Ежемесячный платеж ' + creditMonth)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   </script>

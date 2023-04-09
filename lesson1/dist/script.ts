@@ -1,3 +1,8 @@
+
+
+
+
+
 let a = 'bar'
 let b = 'foo'
 let c = b + a
@@ -175,3 +180,4 @@ while (true) {
     break // прекращение цикла
   }
 }
+
