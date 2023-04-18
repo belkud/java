@@ -310,12 +310,12 @@
     // Ввести целое число и вывести в ответ, четное число или нет.
     // let x = prompt ('Введите число')
     // if (x % 2 == 1)
-// alert ('число нечетное')
-// if (x % 2 == 0)
-// alert ('число четное')
-
-// тернарное выражение
-// let x = prompt ('Введите число')
+    // alert ('число нечетное')
+    // if (x % 2 == 0)
+    // alert ('число четное')
+    
+    // тернарное выражение
+    // let x = prompt ('Введите число')
 // alert ((x % 2 == 0) ? 'Четное' : 'Нечетное')
 
 // Задание 14:
@@ -346,21 +346,6 @@
 // alert ('автомобиль ориентировочно проедет = ' + z + ' км')
 
 
-// switch(protocol) 
-// {
-//  case "HTTP":
-//  description = "Hypertext transfer protocol";
-//  break;
-//  case "HTTPS":
-//  description = "Secure hypertext transfer protocol";
-//  break;
-//  case "FTP":
-//  description = "File transfer protocol";
-//  break;
-//  default :
-//  description = "Unsupported protocol";
-// }
-
 
 // Оператор switch
 // x = +prompt("Input x=");
@@ -376,35 +361,127 @@
 
 // ЦИКЛЫ
 
-// i = 1
-// while (i <= 3) {
+// ЦИКЛ С ПРЕДУСЛОВИЕМ WHILE
+
+// i = 0
+// while (i <= 5) {
 //   console.log (i)
 //   i++
 // }
 
 
-// z = 1 
-// while (z < 10)
-// {
-//   console.log (z + ' месяц ' + z)
-//   z++ 
-// }
-
-
-
-// console.log(Math.random()*(10-8)+8)
-// console.log(Math.round(Math.random()*(10-8)+8))
-
-  //  console.log(Math.random()*(78-50)+78)
-
-
-
-  let i = 1 
-
-// i не равна 0 и получается в результате вычислений или обращения к базе данных
-for (; ; i++) {
-  console.log(`платеж за ${i + 1} месяц`, '1000 р')
+z = 1 
+while (z < 10)
+{
+  console.log (z + ' месяц ' + z)
+  z++ 
 }
+// console.log(Math.round(Math.random()*(10-8)+8))
+// rand(0-1)*(max - min) + min
+// console.log(random(55,80))
+// function logArguments(x) {
+//     console.log(arguments);
+//     console.log("x = " + x);
+//     // for (i = 0; i < arguments.length; i++) {
+//     //   console.log("argument" + i + " = " + arguments[i])
+//     // }
+//     // получаем индексы объекта
+//     for (var i_1 in arguments) {
+  
+//         console.log("argument" + i_1 + " = " + arguments[i_1]);
+//     }
+//     // получаем элементы объекта
+//     for (var _i = 0, arguments_1 = arguments; _i < arguments_1.length; _i++) {
+//         var el = arguments_1[_i];
+//         console.log(el);
+//         // console.log("argument" + i + " = " + arguments[i])
+//     }
+// }
+// var arr = [1, 2, 3, 5];
+// arr.length;
+// var arr2 = Array(1, 2, 3, 5);
+// logArguments(111, 1, 15);
+// function max() {
+//   if (arguments.length == 0) return undefined
+//   let ret = arguments[0]
+//   console.log('ret init', ret)
+//   for (i = 1; i < arguments.length; i++) {
+//     console.log(`ret ${ret}, el ${arguments[i]}`)
+//     if (arguments[i] > ret) {
+//       ret = arguments[i]
+//       console.log(`new ret ${ret}`)
+//     }
+//   }
+// //   return ret;
+// // }
+// // console.log(max(12,12,15,18,17,2))
+// var ato1 = 1;
+// var ato2 = 1;
+// var ato3 = 1;
+// var ato4 = 1;
+// console.log('global', ato1, ato2, ato3, ato4);
+// if (ato1 == ato2) {
+//     var ato1_1 = 2;
+//     var ato2_1 = 2;
+//     var ato3_1 = 2;
+//     ato4 = 2;
+//     ato2_1 = 7;
+//     console.log('local if', ato1_1, ato2_1, ato3_1, ato4);
+// }
+// for (var i_2 = 0; i_2 < 2; i_2++) {
+//     var ato1_2 = 3;
+//     var ato2_2 = 3;
+//     ato3 = 3;
+//     var ato4_1 = 3;
+//     if (ato4_1 == 3) {
+//         ato3 = 88;
+//     }
+//     console.log('local for', ato1_2, ato2_2, ato3, ato4_1);
+// }
+// function localScope(x) {
+//     var ato1 = 10;
+//     var ato2 = 10;
+//     var ato3 = 10;
+//     var ato4 = 10;
+//     console.log('local func', ato1, ato2, ato3, ato4);
+//     return x + ato4;
+// }
+// ato1 = localScope(12);
+// console.log('global', ato1, ato2, ato3, ato4);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 let x = prompt ('введите количество долларов)
 let y = 75 
