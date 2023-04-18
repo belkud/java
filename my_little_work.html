@@ -14,12 +14,66 @@
 </head>
 
 <body>
-
-  <p id="a">Hello</p>
+  <!-- <p id="Log"></p> -->
 
   <script>
-    a.innerHTML = 'My_little_work'
+// function incAndLog(x) {
+//  x = x+1;
+//  alert("inc x = " + x);
+//  Log.innerHTML += "<br>inc x = " + x;
+//  }
+//  x = 10;
+//  Log.innerHTML = "x = " + x;
+//  incAndLog(x);
+//  Log.innerHTML = "<br>x = " + x;
+
+
+    // a.innerHTML = 'My_little_work'
     console.log('5 + 9 =', 5 + 9)
+
+
+
+
+// 3. Напишите скрипт, который запрашивает у пользовaтеля число N и выводит все числа, на которые делится 
+// N, включая число 1 (примеры: ввод N=10, вывод 1, 2, 
+// 5; ввод 11, вывод 1).
+
+// function deviders (x) {
+//   for (let i=1; i<x; i++) {
+//     if (x%i==0) console.log(i)
+//   }
+// }
+
+// deviders(10)
+// deviders(4096)
+
+
+//     6. Из-за утечки из бака охлаждения ежедневно вытекает 
+// 10% налитой воды. При объеме воды менее 10 литров 
+// возникает аварийная ситуация. Составьте программу, 
+// которая запрашивает у пользователя первоначальный 
+// объем воды и рассчитывает, на сколько дней работы 
+// этого хватит.
+
+// function getDaysOfWorking(x) {
+//   let days = 0
+//   while (x>=10) {
+//     x = x - x/10
+//     days++
+//   }
+//   return days
+// }
+
+// console.log('9 liters',
+// getDaysOfWorking(9)
+// )
+// console.log(15,
+// getDaysOfWorking(15)
+// )
+// console.log(30,
+// getDaysOfWorking(30)
+// )
+
 
 // x = 5
 // y = 7
@@ -203,7 +257,7 @@
                   // let y = (diesel - x)
                   // alert ('литров осталось:' + y + ' литров')
 
-
+// document.query
 
   // Задание 9:
 
@@ -329,14 +383,42 @@
 // }
 
 
-z = 1 
-while (z < 10)
-{
-  console.log (z + ' месяц ' + z)
-  z++ 
+// z = 1 
+// while (z < 10)
+// {
+//   console.log (z + ' месяц ' + z)
+//   z++ 
+// }
+
+
+
+// console.log(Math.random()*(10-8)+8)
+// console.log(Math.round(Math.random()*(10-8)+8))
+
+  //  console.log(Math.random()*(78-50)+78)
+
+
+
+  let i = 1 
+
+// i не равна 0 и получается в результате вычислений или обращения к базе данных
+for (; ; i++) {
+  console.log(`платеж за ${i + 1} месяц`, '1000 р')
 }
 
+let x = prompt ('введите количество долларов)
+let y = 75 
+sum = x *y
+console. log (Sum )
 
+
+Let x = prompt ('введите число')
+Let у = prompt ('введите число')
+z = (x + y) /2 
+Console.log (z)
+
+
+   
   </script>
 </body>
 
