@@ -3,11 +3,11 @@
 
 
 
-let a = 'bar'
-let b = 'foo'
-let c = b + a
+// let a = 'bar'
+// let b = 'foo'
+// let c = b + a
 
-let p = document.querySelector('#p')
+// let p = document.querySelector('#p')
 // console.log(random(55,80))
 
 
@@ -148,8 +148,8 @@ let result = prompt('Введите пароль')
 // }
 
 // два варианта создания массива
-const arr0 = []
-const arr1 = new Array()
+// const arr0 = []
+// const arr1 = new Array()
 
 // создали массив с данными
 // const array = [0,2,3,5,7,8,9]
@@ -171,16 +171,16 @@ const arr1 = new Array()
 //   console.log(el)
 // }
 
-let i = 0
-while (true) {
-  i++
-  if (i==3 || i==5) {
-    continue // переходит к проверке условия цикла, не выполняя дальнейшие инструкции тела цикла
-  }
-  console.log(i)
+// let i = 0
+// while (true) {
+//   i++
+//   if (i==3 || i==5) {
+//     continue // переходит к проверке условия цикла, не выполняя дальнейшие инструкции тела цикла
+//   }
+//   console.log(i)
 
-  if (i>10) {
-    break // прекращение цикла
-  }
-}
+//   if (i>10) {
+//     break // прекращение цикла
+//   }
+// }
 
