@@ -3,6 +3,8 @@ var b = 'foo';
 var c = b + a;
 var p = document.querySelector('#p');
 
+ console.log('3 === "3"', 3 === '3')
+    console.log('3 !== "3"', 3 !== '3')
 
 // const month = parseInt(prompt('Введите количество месяцев') as string)
 const month = prompt('Введите количество месяцев')
@@ -13,7 +15,7 @@ let i = 0
 // Как только условие становится ложным, программа выходит из тела цикла
 while (i < month) {
   console.log(`платеж за ${i+1} месяц`, '1000 р')
-  // console.log('платеж за ' + i + ' месяц', '1000 р')
+  console.log('платеж за ' + i + ' месяц', '1000 р')
   i = i + 1
    i++
    i+=1
